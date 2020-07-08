@@ -74,8 +74,8 @@ Tipo de Secuencia             |  MPRAGE           | ponderada en 3D T1 (TI / TR 
 Tipo de Escáner               |  Philips Achieva  | Philips Healthcare, Inc
 
 Donde: 
-TI: Medium Inversion Time
-TR: Long Repetition Time
-TE: Rapidly Acquired Gradient Echoes
+- TI: Medium Inversion Time
+- TR: Long Repetition Time
+- TE: Rapidly Acquired Gradient Echoes
 
 
