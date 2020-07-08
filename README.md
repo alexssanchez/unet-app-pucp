@@ -12,7 +12,7 @@ Diagrama de Aquitecura de una red U-Net:
 
 ![](image/Arq_UNet.png)
 
-Para citar a esta arquitectura de red: 
+Para citar a esta arquitectura de red, utilice: 
 ```
 @misc{ronneberger2015unet,
     title={U-Net: Convolutional Networks for Biomedical Image Segmentation},
@@ -27,7 +27,7 @@ Para citar a esta arquitectura de red:
 
 Evolución de U-Net a UNet ++. Cada nodo en el gráfico representa un bloque de convolución, la dirección de las flechas indican en qué dirección se realiza el el muestreo y las flechas de puntos indican conexiones salteadas.
 
-Diagrama de Aquitecura de una red U-Net:
+Diagrama de Aquitecura de una red U-Net++, utilice:
 
 ![](image/Arq_UNet++.png)
 
@@ -45,5 +45,37 @@ Para citar a esta arquitectura de red:
 
 ### Descripción de Dataset
 
-Para la presente aplicacón se está considerando el dataset de Hipocampo, el cual fue publicado en la [Medical Segmentation Decathlon](http://medicaldecathlon.com/)
+Para la presente aplicacón se está considerando el dataset de Hipocampo, el cual fue publicado en la [Medical Segmentation Decathlon](http://medicaldecathlon.com/), para mayor detalle revisar el paper publicado en [ArXiv](https://arxiv.org/abs/1902.09063v1).
+
+El conjunto de datos está compuesto de Imágenes por Resonancia Magnética (IRM), el cual se subdivide de la siguiente manera:
+
+Descripción       | # Imágenes
+:----------------:|:-----------:
+Adultos Sanos     |  90
+Adulto Enfermos   |  105
+Total Imágenes    |  205
+
+Las Imágenes de los Adultos enfermos se subdividen según la enfermedad que sufren, los cuales se muestran en la siguiente manera:
+
+Descripción                                      | # Imágenes
+:-----------------------------------------------:|:-----------:
+Trastorno psicótico no afectivo (esquizofrenia)  |  90
+Trastorno esquizoafectivo                        |  105
+Trastorno esquizofreniforme                      |  205
+Total Imágenes                                   |  205 
+
+Todas las personas consideradas estaban libres de enfermedades médicas o neurológicas significativas, lesiones en la cabeza y/o uso dependencia de sustancias activas. 
+
+Características de las imágenes:
+
+Descripción                   | Valor             | Observación
+:----------------------------:|:-----------------:|:---------------------------------------------:
+Tipo de Secuencia             |  MPRAGE           | ponderada en 3D T1 (TI / TR / TE, 860 / 8.0 / 3.7 ms; 170 cortes sagitales; tamaño de vóxel, 1.0 mm3)
+Tipo de Escáner               |  Philips Achieva  | Philips Healthcare, Inc
+
+Donde: 
+TI: Medium Inversion Time
+TR: Long Repetition Time
+TE: Rapidly Acquired Gradient Echoes
+
 
