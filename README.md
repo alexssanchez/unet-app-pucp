@@ -78,4 +78,15 @@ Donde:
 - TR: Long Repetition Time
 - TE: Rapidly Acquired Gradient Echoes
 
+### Segmentación de Imágenes utilizando [Image Segmentation Keras](https://github.com/divamgupta/image-segmentation-keras)
+
+[Image Segmentation Keras](https://github.com/divamgupta/image-segmentation-keras) es un paquete escrito en [pyton](https://www.python.org/) que implementa Segnet, FCN, UNet, PSPNet, entre otros modelos de segmentación de imágenes [Keras](https://keras.io/).
+
+El siguiente ejemplo de segmentación de imágenes toma como guia el post [A Beginner's guide to Deep Learning based Semantic Segmentation using Keras](https://divamgupta.com/image-segmentation/2019/06/06/deep-learning-semantic-segmentation-keras.html).
+
+Imágen Original                                  | # Imágen Segmentada
+:---------------------------------------:|:---------------------------------------:
+![](image/moto_gp_01.jpg)                |![](image/out.png)
+
+Para realizar la segmentación de la imagen mostrada, se utilizó la red pre-entrenada ["pspnet_101_voc12"](https://github.com/divamgupta/image-segmentation-keras/blob/master/keras_segmentation/pretrained.py#L67) el cual usa como el dataset a [Pascal VOC 2012](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/).
 
